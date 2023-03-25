@@ -96,7 +96,7 @@ if(localStorage.getItem("pokemons") == null){
     setTimeout(salvaLocalStorage, 1000)
      setTimeout(function(){
         window.location.reload()
-    }, 2000)
+    }, 3000)
 }
 
 
