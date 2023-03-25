@@ -31,7 +31,6 @@ const pokemons = []
 const fetchPokemon = async () =>{
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokedex/hisui/`) //(`https://pokeapi.co/api/v2/pokemon/${id}`)
     const data = await APIResponse.json();
-    console.log(data)
     const dados = await data['pokemon_entries']
 
     await dados.forEach(async element => {
@@ -95,6 +94,9 @@ const salvaLocalStorage = () =>{
 
 if(localStorage.getItem("pokemons") == null){
     setTimeout(salvaLocalStorage, 1000)
+     setTimeout(function(){
+        window.location.reload()
+    }, 2000)
 }
 
 
