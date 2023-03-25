@@ -23,7 +23,8 @@ body{
 }
 
 .cabecalho {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-Z_nRR3gxKrWKaLv3JZOe7H3hCtSfExKpDNF1gLMJ3frLQJnhvJow-jG2CqatJ9gdWs&usqp=CAU');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-Z_nRR3gxKrWKaLv3JZOe7H3hCtSfExKpDNF1gLMJ3frLQJnhvJow-jG2CqatJ9gdWs&usqp=CAU'); */
+    background-image: url('https://adrenaline.com.br/uploads/chamadas/pokemon-legends-arceus-chamada.jpg');
     background-repeat: no-repeat;
     background-size: 100% 250px ;
     height: 250px;
