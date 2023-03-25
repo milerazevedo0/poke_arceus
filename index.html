@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Arceus</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script src="app/exibePokemon.js" defer></script>
+    <script src="app/base.js" defer></script>
+    <script src="app/filtroBotoes.js" defer></script>
+    <script src="app/salvaPoke.js" defer></script>
+
+</head>
+
+<header class="cabecalho">
+</header>
+
+<body>
+
+    <section class="nav" id="nav">
+        <nav class="section__menu">
+            <ul class="ul__menu">
+                <li class="li__menu"><button href="#" class="btn btn__menu" id="btn-todos" value="todos">Todos</button>
+                </li>
+
+                <li class="li__menu"><button href="#" class="btn btn__menu" id="btn-Capturados"
+                        value="capturados">Capturados</button></li>
+                <li class="li__menu"><button href="#" class="btn btn__menu" id="btn-nao-capturados"
+                        value="naocapturados">Não Capturados</button></li>
+
+                <!-- <li class="li__menu"><submit href="#" class="btn btn__menu" id="btn-salvar"
+                        value="salvar">Salvar</submit></li> -->
+            </ul>
+        </nav>
+    </section>
+
+    <section class="pokemon__secao" id="secao-pokemon">
+
+        <!-- <div class="pokemon">
+            <div class="img__pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+    
+            <div class="dados__pokemon">
+                <ul class="poke__dados">
+                    <li class="poke__info" id="pokemon-nome">Nome</li>
+                    <li class="poke__info" id="pokemon-tipo">Tipo</li>
+                    <li class="poke__info" id="pokemon-localizacao">Localização</li>
+                    <li class="poke__info" >
+                        <input type="checkbox" id="pokemon-capturado"> <label for="pokemon-capturado">Capturado?</label></li>
+                </ul>
+    
+            </div>
+        </div>
+
+        <div class="pokemon">
+            <div class="img__pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+    
+            <div class="dados__pokemon">
+                <ul class="poke__dados">
+                    <li class="poke__info" id="pokemon-nome">Nome</li>
+                    <li class="poke__info" id="pokemon-tipo">Tipo</li>
+                    <li class="poke__info" id="pokemon-localizacao">Localização</li>
+                    <li class="poke__info" >
+                        <input type="checkbox" id="pokemon-capturado"> <label for="pokemon-capturado">Capturado?</label></li>
+                </ul>
+    
+            </div>
+        </div>
+
+        <div class="pokemon">
+            <div class="img__pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+    
+            <div class="dados__pokemon">
+                <ul class="poke__dados">
+                    <li class="poke__info" id="pokemon-nome">Nome</li>
+                    <li class="poke__info" id="pokemon-tipo">Tipo</li>
+                    <li class="poke__info" id="pokemon-localizacao">Localização</li>
+                    <li class="poke__info" >
+                        <input type="checkbox" id="pokemon-capturado"> <label for="pokemon-capturado">Capturado?</label></li>
+                </ul>
+    
+            </div>
+        </div>
+
+        <div class="pokemon">
+            <div class="img__pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+    
+            <div class="dados__pokemon">
+                <ul class="poke__dados">
+                    <li class="poke__info" id="pokemon-nome">Nome</li>
+                    <li class="poke__info" id="pokemon-tipo">Tipo</li>
+                    <li class="poke__info" id="pokemon-localizacao">Localização</li>
+                    <li class="poke__info" >
+                        <input type="checkbox" id="pokemon-capturado"> <label for="pokemon-capturado">Capturado?</label></li>
+                </ul>
+    
+            </div>
+        </div>
+
+        <div class="pokemon">
+            <div class="img__pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+    
+            <div class="dados__pokemon">
+                <ul class="poke__dados">
+                    <li class="poke__info" id="pokemon-nome">Nome</li>
+                    <li class="poke__info" id="pokemon-tipo">Tipo</li>
+                    <li class="poke__info" id="pokemon-localizacao">Localização</li>
+                    <li class="poke__info" >
+                        <input type="checkbox" id="pokemon-capturado"> <label for="pokemon-capturado">Capturado?</label></li>
+                </ul>
+    
+            </div>
+        </div>
+
+        <div class="pokemon">
+            <div class="img__pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+    
+            <div class="dados__pokemon">
+                <ul class="poke__dados">
+                    <li class="poke__info" id="pokemon-nome">Nome</li>
+                    <li class="poke__info" id="pokemon-tipo">Tipo</li>
+                    <li class="poke__info" id="pokemon-localizacao">Localização</li>
+                    <li class="poke__info" >
+                        <input type="checkbox" id="pokemon-capturado"> <label for="pokemon-capturado">Capturado?</label></li>
+                </ul>
+    
+            </div>
+        </div> -->
+
+
+
+
+    </section>
+
+    <hr>
+
+    <footer class="rodape">
+        <h2>Desenvolvido por Miler</h2>
+    </footer>
+
+</body>
+
+
+
+</html>
