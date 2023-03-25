@@ -10,6 +10,7 @@ function filtraPoke() {
         let pokeFiltrado = categoria == 'todos' ? pokeStorage : filtraCapturado(categoria)
 
         exibePokeNaTela(pokeFiltrado)
+        salvaPokemon();
     }
 }
 
