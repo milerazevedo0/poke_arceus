@@ -1,7 +1,6 @@
 
 function salvaPokemon(){
 
-
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
     checkboxes.forEach((checkbox) => {
@@ -16,8 +15,6 @@ function salvaPokemon(){
             localStorage.setItem('pokemons', JSON.stringify(pokeStorage))
         });
     });
-
-
 }
 
 salvaPokemon();

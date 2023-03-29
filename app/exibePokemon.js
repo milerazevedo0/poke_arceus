@@ -1,10 +1,12 @@
 
 const elementoParaInserirPoke = document.getElementById('secao-pokemon');
-
+const elementoTotal = document.getElementById('exibe_total')
 
 function exibePokeNaTela(pokemons) {
     elementoParaInserirPoke.innerHTML = ''
+    let total = 'Total de Pokemons: ' + pokemons.length
 
+    elementoTotal.innerHTML = total
 
     pokemons.forEach(pokemon => {
 
@@ -40,7 +42,6 @@ function exibePokeNaTela(pokemons) {
         const divPokeImg = document.createElement('div')
         divPokeImg.classList.add('img_pokemon')
         divPokeImg.src = pokemon.img
-        // divPokeImg.alt = 
         const imgPoke = document.createElement('img')
         imgPoke.alt = "Imagem representativa do pokemon"
         imgPoke.src = pokemon.img
@@ -50,19 +51,18 @@ function exibePokeNaTela(pokemons) {
         const divDadosPoke = document.createElement('div')
         divDadosPoke.classList.add('dados__pokemon')
 
-        const pokeNome = document.createElement('p')
+        const pokeId = document.createElement('p')
         const pokeNomeStrong = document.createElement('strong')
-        pokeNomeStrong.innerText = pokemon.nome
-        pokeNome.classList.add('poke__info')
-        pokeNome.appendChild(pokeNomeStrong)
+        pokeNomeStrong.innerText = pokemon.id
+        pokeId.classList.add('poke__info')
+        pokeId.appendChild(pokeNomeStrong)
 
-        const pokeLocal = document.createElement('p')
-        pokeLocal.innerText = pokemon.localizacao
-        pokeLocal.classList.add('poke__info')
+        const pokeNome = document.createElement('p')
+        pokeNome.innerText = pokemon.nome
+        pokeNome.classList.add('poke__info')
 
         const capturedCheckbox = document.createElement("input")
         capturedCheckbox.type = "checkbox"
-        // capturedCheckbox.id = 'pokemon-capturado'
         capturedCheckbox.id = pokemon.id
         capturedCheckbox.dataset.id = 'pokemon-capturado'
         capturedCheckbox.classList.add('poke__info__check')
@@ -72,32 +72,13 @@ function exibePokeNaTela(pokemons) {
         // labelCap.htmlFor = 'pokemon-capturado'
         // labelCap.textContent = "Capturado?"
 
-
         // capturedCheckbox.insertAdjacentElement("beforebegin", labelCap)
 
+        divDadosPoke.appendChild(pokeId)
         divDadosPoke.appendChild(pokeNome)
-        divDadosPoke.appendChild(pokeLocal)
         divDadosPoke.appendChild(capturedCheckbox)
 
         divPokemon.appendChild(divDadosPoke)
-
-
     })
 
 }
-
-
-// function toBool(value){
-//     const parseBool = value =>
-//       ['true', 'false'].includes(value) ? value === true : null
-// }
-
-
-
-
-
-// const elementoCheck = document.querySelectorAll('input')
-
-// elementoCheck.addEventListener('change', () => {
-//     console.log('teste')
-// })

@@ -25,7 +25,6 @@
 
 // ]; 
 
-
 const pokemons = []
 
 const fetchPokemon = async () =>{
@@ -48,8 +47,7 @@ const fetchPokemon = async () =>{
 }
 
 const fetchPokeImg = async (id, nome, numero) => {
-
-    
+   
     try{
         let pokeNumero = numero
         let pokeId = id 
@@ -81,9 +79,7 @@ const fetchPokeImg = async (id, nome, numero) => {
     }catch(error){
         console.error(`Ocorreu um erro: ${error}`)
     }
- 
 }
-
 
 fetchPokemon();
 
@@ -99,12 +95,8 @@ if(localStorage.getItem("pokemons") == null){
     }, 3000)
 }
 
-
 pokeStorage = JSON.parse(localStorage.getItem("pokemons")) || []
 
 pokeStorage.sort((a,b) => a.id - b.id)
 
 exibePokeNaTela(pokeStorage)
-
-
-
